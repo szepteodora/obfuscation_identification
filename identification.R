@@ -89,7 +89,7 @@ for (gammaval in gammarange){
     }
     
     
-    # Likelihood matrix: P(a_j|r_k) (if agent follows rules akkording to the ith beta, what is the percentage of choosing each action)
+    # Likelihood matrix: P(a_j|r_k) (if agent follows rules according to the ith beta, what is the percentage of choosing each action)
     P <- matrix(0, nrow = nrow(U_j), ncol = J)   
     for (i in 1:nrow(U_j)){
       for (j in 1:J){
@@ -170,7 +170,7 @@ for (gammaval in gammarange){
   
   apollo_initialise()
   apollo_control = list(
-    modelName ="Obfuscation_informed", 
+    modelName ="Obfuscation", 
     indivID   ="ID",     
     panelData = FALSE,    
     mixing    = FALSE,  
